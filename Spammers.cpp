@@ -54,13 +54,13 @@ void Spammers::clan_changer()
 			case 31: tag = XorStr("yet i   "); break;
 		}*/
 
-		switch ( int( m_pGlobals->curtime * 2.4 ) % 27 )
+		switch (int(m_pGlobals->curtime * 2.4) % 27)
 		{
-		case 0: game::functions.set_clan_tag( XorStr("Supreme..."), "gamesense" ); break;
-		case 1: game::functions.set_clan_tag( XorStr("Supreme.."), "gamesense" ); break;
-		case 2: game::functions.set_clan_tag(XorStr("Supreme..."), "gamesense"); break;
-		case 3: game::functions.set_clan_tag(XorStr("SupremeHvH.cc"), "gamesense"); break;
-		case 4: game::functions.set_clan_tag(XorStr("SupremeHvH.cc"), "gamesense"); break;
+		case 0: game::functions.set_clan_tag(XorStr("66"), "gamesense"); break;
+		case 1: game::functions.set_clan_tag(XorStr("Cheats"), "gamesense"); break;
+		case 2: game::functions.set_clan_tag(XorStr(">"), "gamesense"); break;
+		case 3: game::functions.set_clan_tag(XorStr("All"), "gamesense"); break;
+		case 4: game::functions.set_clan_tag(XorStr("66Cheats>All"), "gamesense"); break;
 		}
 	}
 }
