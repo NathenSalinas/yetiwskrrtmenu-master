@@ -20,6 +20,7 @@ namespace Globals
 	extern int missedshots;
 	extern int TargetID;
 	extern bool didhitHS;
+	extern bool MissedShots;
 	extern int shots;
 	extern bool OldLBY;
 	extern bool SendPacket;
