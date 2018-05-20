@@ -13,7 +13,7 @@ int iSmart;
 static int jitter = -1;
 float LatestLowerBodyYaw[64];
 bool LbyUpdated[64];
-bool Globals::MissedShots;
+bool Globals::missedshots;
 float YawDifference[64];
 float OldYawDifference[64]; 
 float LatestLowerBodyYawUpdateTime[64];

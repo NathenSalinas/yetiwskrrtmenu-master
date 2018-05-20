@@ -17,10 +17,9 @@ namespace Globals
 	extern IClientEntity* Target;
 	extern int Shots;
 	extern bool change;
-	extern int missedshots;
+	extern bool missedshots;
 	extern int TargetID;
 	extern bool didhitHS;
-	extern bool MissedShots;
 	extern int shots;
 	extern bool OldLBY;
 	extern bool SendPacket;
