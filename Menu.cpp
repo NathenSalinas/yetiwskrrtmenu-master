@@ -282,11 +282,11 @@ void CRageBotTab::Setup( )
 	ResolverOverrideKey.SetFileId( XorStr( "r_resolveroverridekey" ) );
 	ResolverOptions.PlaceLabledControl( 0, XorStr( "" ), this, &ResolverOverrideKey );
 
-	Lbybreaker.SetFileId("r_lbybreaker");
-	ResolverOptions.PlaceLabledControl(4, XorStr("Fake Detection"), this, &Lbybreaker);
+	Lbybreaker.SetFileId("r_lbybreaker");       //used to be fake detection is now pitch resolver     
+	ResolverOptions.PlaceLabledControl(4, XorStr("Pitch Resolver"), this, &Lbybreaker);
 
-	DisableInterpolation.SetFileId( XorStr( "r_disableinterp" ) );
-	ResolverOptions.PlaceLabledControl( 0, XorStr( "Synchronize animations" ), this, &DisableInterpolation );
+	DisableInterpolation.SetFileId( XorStr( "r_disableinterp" ) );            //lby fix used to be sycrinize fakes?
+	ResolverOptions.PlaceLabledControl( 0, XorStr( "LBY Fix" ), this, &DisableInterpolation );
 
 	Backtracking.SetFileId( XorStr( "r_backtracking" ) );
 	ResolverOptions.PlaceLabledControl( 0, XorStr( "Backtracking" ), this, &Backtracking );

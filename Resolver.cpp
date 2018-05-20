@@ -9,11 +9,11 @@ float reset[64];
 float Delta[64];
 float GetSimulationTime[64];
 float Resolved_angles[64];
+bool Globals::missedshots;
 int iSmart;
 static int jitter = -1;
 float LatestLowerBodyYaw[64];
 bool LbyUpdated[64];
-bool Globals::missedshots;
 float YawDifference[64];
 float OldYawDifference[64]; 
 float LatestLowerBodyYawUpdateTime[64];
@@ -5788,7 +5788,7 @@ void CResolver::CM(IClientEntity* pEntity)
 
 void CResolver::LowerBodyYawFix(IClientEntity* pEntity)
 {
-	if (Menu::Window.RageBotTab.LBYfix.GetState());
+	if (Menu::Window.RageBotTab.DisableInterpolation.GetState());
 	bool NextLBYUpdate();
 	{
 		static bool wilupdate;
@@ -5993,7 +5993,7 @@ void CResolver::PitchCorrection(IClientEntity * pEntity, IClientEntity * pLocal)
 		if (pLocal)
 			continue;
 		{
-			if (Menu::Window.RageBotTab.pitchcorrection.GetState())
+			if (Menu::Window.RageBotTab.ResolverDebug.GetState())
 			{
 				Vector* eyeAngles = player->GetEyeAngles();
 				if (eyeAngles->x < -179.f) eyeAngles->x += 360.f;
